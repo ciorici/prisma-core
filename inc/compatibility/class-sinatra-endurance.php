@@ -33,6 +33,13 @@ if ( ! class_exists( 'Sinatra_Endurance' ) ) :
 		private static $instance;
 
 		/**
+		 * Registered pointers.
+		 *
+		 * @var array
+		 */
+		private $pointers = array();
+
+		/**
 		 * Main Sinatra_Endurance Instance.
 		 *
 		 * @since 1.0.0

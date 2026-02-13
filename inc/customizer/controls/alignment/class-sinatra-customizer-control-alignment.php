@@ -28,6 +28,27 @@ if ( ! class_exists( 'Sinatra_Customizer_Control_Alignment' ) ) :
 		public $type = 'sinatra-alignment';
 
 		/**
+		 * Alignment label strings.
+		 *
+		 * @var array
+		 */
+		public $strings = array();
+
+		/**
+		 * Alignment icons.
+		 *
+		 * @var array
+		 */
+		public $icons = array();
+
+		/**
+		 * Available alignment choices.
+		 *
+		 * @var array
+		 */
+		public $choices = array();
+
+		/**
 		 * Set the default typography options.
 		 *
 		 * @since 1.0.0

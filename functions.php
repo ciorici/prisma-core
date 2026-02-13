@@ -31,6 +31,46 @@ final class Sinatra {
 	public $version = '1.3';
 
 	/**
+	 * Theme options.
+	 *
+	 * @since 1.0.0
+	 * @var Sinatra_Options
+	 */
+	public $options;
+
+	/**
+	 * Fonts.
+	 *
+	 * @since 1.0.0
+	 * @var Sinatra_Fonts
+	 */
+	public $fonts;
+
+	/**
+	 * Icons.
+	 *
+	 * @since 1.0.0
+	 * @var Sinatra_Icons
+	 */
+	public $icons;
+
+	/**
+	 * Customizer.
+	 *
+	 * @since 1.0.0
+	 * @var Sinatra_Customizer
+	 */
+	public $customizer;
+
+	/**
+	 * Admin.
+	 *
+	 * @since 1.0.0
+	 * @var Sinatra_Admin
+	 */
+	public $admin;
+
+	/**
 	 * Main Sinatra Instance.
 	 *
 	 * Insures that only one instance of Sinatra exists in memory at any one
