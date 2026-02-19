@@ -152,6 +152,7 @@ final class Prisma_Core {
 		require_once PRISMA_CORE_THEME_PATH . '/inc/core/class-prisma-core-theme-setup.php';
 		require_once PRISMA_CORE_THEME_PATH . '/inc/core/class-prisma-core-db-updater.php';
 		require_once PRISMA_CORE_THEME_PATH . '/inc/core/class-prisma-core-migration.php';
+		require_once PRISMA_CORE_THEME_PATH . '/inc/core/class-prisma-core-theme-json.php';
 
 		// Compatibility.
 		require_once PRISMA_CORE_THEME_PATH . '/inc/compatibility/woocommerce/class-prisma-core-woocommerce.php';

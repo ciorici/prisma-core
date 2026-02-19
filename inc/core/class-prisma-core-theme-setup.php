@@ -104,6 +104,15 @@ if ( ! class_exists( 'Prisma_Core_Theme_Setup' ) ) :
 			// Add support for core block visual styles.
 			add_theme_support( 'wp-block-styles' );
 
+			// Add support for editor styles.
+			add_theme_support( 'editor-styles' );
+
+			// Add support for custom spacing.
+			add_theme_support( 'custom-spacing' );
+
+			// Add support for custom line height.
+			add_theme_support( 'custom-line-height' );
+
 			// Selective Refresh for Customizer.
 			add_theme_support( 'customize-selective-refresh-widgets' );
 
