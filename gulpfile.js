@@ -115,7 +115,7 @@ function controlJs() {
 
 const buildCss = parallel( controlScss, css );
 const buildJs = parallel( frontJs, adminJsMin, customizerJsMin, controlJs );
-const build = parallel( buildCss, buildJs );
+const build = parallel( buildCss, buildJs, readme );
 
 // ─── Watch ────────────────────────────────────────────────────────────
 

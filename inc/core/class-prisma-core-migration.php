@@ -1,9 +1,9 @@
 <?php
 /**
- * Migration from Prisma Core theme.
+ * Migration from Sinatra theme.
  *
  * Migrates Customizer settings, widget assignments, and menu locations
- * from the original Prisma Core theme when users switch to the renamed fork.
+ * from the original Sinatra theme when users switch to the renamed fork.
  *
  * @package Prisma Core
  * @since   1.4.0
@@ -49,7 +49,7 @@ if ( ! class_exists( 'Prisma_Core_Migration' ) ) :
 		}
 
 		/**
-		 * Run migration if switching from old Prisma Core theme.
+		 * Run migration if switching from old Sinatra theme.
 		 *
 		 * @since 1.4.0
 		 */
@@ -62,14 +62,14 @@ if ( ! class_exists( 'Prisma_Core_Migration' ) ) :
 			}
 
 			// Already migrated.
-			if ( get_option( $current_slug . '_migrated_from_prisma-core' ) ) {
+			if ( get_option( $current_slug . '_migrated_from_sinatra' ) ) {
 				return;
 			}
 
 			$old_mods = get_option( 'theme_mods_' . self::OLD_SLUG );
 
 			if ( ! $old_mods || ! is_array( $old_mods ) ) {
-				return; // No Prisma Core data to migrate.
+				return; // No Sinatra data to migrate.
 			}
 
 			$new_prefix = $current_slug . '_';
@@ -79,14 +79,14 @@ if ( ! class_exists( 'Prisma_Core_Migration' ) ) :
 			$this->migrate_options( $current_slug );
 
 			// Mark migration complete.
-			update_option( $current_slug . '_migrated_from_prisma-core', true );
+			update_option( $current_slug . '_migrated_from_sinatra', true );
 		}
 
 		/**
 		 * Migrate theme_mods (Customizer settings + menu locations).
 		 *
 		 * @since 1.4.0
-		 * @param array  $old_mods     The old theme_mods_prisma-core array.
+		 * @param array  $old_mods     The old theme_mods_sinatra array.
 		 * @param string $current_slug The new theme slug.
 		 * @param string $new_prefix   The new option key prefix.
 		 */
@@ -98,7 +98,7 @@ if ( ! class_exists( 'Prisma_Core_Migration' ) ) :
 				$new_mods[ $new_key ] = $value;
 			}
 
-			// Remap nav_menu_locations keys (e.g. 'prisma-core-primary' → '{slug}-primary').
+			// Remap nav_menu_locations keys (e.g. 'sinatra-primary' → '{slug}-primary').
 			if ( isset( $new_mods['nav_menu_locations'] ) && is_array( $new_mods['nav_menu_locations'] ) ) {
 				$new_locations = array();
 				foreach ( $new_mods['nav_menu_locations'] as $loc => $menu_id ) {
@@ -166,7 +166,7 @@ if ( ! class_exists( 'Prisma_Core_Migration' ) ) :
 		/**
 		 * Remap an option key from old prefix to new prefix.
 		 *
-		 * Keys like 'prisma_core_primary_color' become '{prefix}primary_color'.
+		 * Keys like 'sinatra_primary_color' become '{prefix}primary_color'.
 		 * Keys without the old prefix (e.g. 'custom_logo') are left unchanged.
 		 *
 		 * @since 1.4.0
