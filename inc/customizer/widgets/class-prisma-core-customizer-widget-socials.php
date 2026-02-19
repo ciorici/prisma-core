@@ -48,8 +48,8 @@ if ( ! class_exists( 'Prisma_Core_Customizer_Widget_Socials' ) ) :
 			parent::__construct( $args );
 
 			$this->name        = __( 'Social Links', 'prisma-core' );
-			$this->description = __( 'Links to your social media profiles.', 'prisma-core' );
-			$this->icon        = 'dashicons dashicons-twitter';
+			$this->description = __( 'Display social media icons from a navigation menu. Create a menu with links to your profiles and the theme will automatically show icons for: X (Twitter), Facebook, Instagram, LinkedIn, YouTube, GitHub, Pinterest, Reddit, Spotify, Vimeo, Snapchat, Twitch, SoundCloud, Tumblr, Medium, Dribbble, Behance, 500px, Flickr, WhatsApp, and more.', 'prisma-core' );
+			$this->icon        = 'dashicons dashicons-share';
 			$this->type        = 'socials';
 			$this->styles      = isset( $args['styles'] ) ? $args['styles'] : array();
 		}
