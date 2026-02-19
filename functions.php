@@ -28,7 +28,7 @@ final class Sinatra {
 	 * @since 1.0.0
 	 * @var string
 	 */
-	public $version = '1.3';
+	public $version = '1.4.0';
 
 	/**
 	 * Theme options.

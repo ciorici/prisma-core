@@ -1,30 +1,50 @@
 === Sinatra ===
-Contributors: sinatrateam
+Contributors: ciorici, sinatrateam
 Tags: two-columns, right-sidebar, left-sidebar, footer-widgets, blog, news, custom-background, custom-menu, post-formats, sticky-post, editor-style, threaded-comments, translation-ready, custom-colors, featured-images, full-width-template, microformats, theme-options, e-commerce
-Requires at least: 5.0
-Tested up to: 6.3
-Requires PHP: 5.6
+Requires at least: 6.4
+Tested up to: 6.9
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: trunk
+Stable tag: 1.4.0
 
 A lightweight and highly customizable multi-purpose theme that makes it easy for anyone to create their perfect website.
 
 == Description ==
-Sinatra is a lightweight and highly customizable multi-purpose theme that makes it easy for anyone to create their perfect website. It comes with microdata integration, unlimited colors, multiple layouts, pre-built demo websites and so much more. It's also translatable and built with best SEO practices. It works well with your favorite plugins such as WooCommerce, JetPack, page builders, SEO plugins and others.
+Sinatra is a lightweight and highly customizable multi-purpose theme that makes it easy for anyone to create their perfect website. It comes with microdata integration, unlimited colors, multiple layouts and so much more. It's also translatable and built with best SEO practices. It works well with your favorite plugins such as WooCommerce, JetPack, page builders, SEO plugins and others.
+
+This is a community-maintained fork of the original Sinatra theme by Sinatra Team. The original theme was last updated in 2023 and is no longer maintained. This fork includes security fixes, PHP 8.2+ compatibility, WordPress 6.7+ compatibility, and updated WooCommerce support.
+
+Source code: https://github.com/ciorici/sinatra
 
 == Frequently Asked Questions ==
 
 = How to install Sinatra? =
 
-1. Log into your WordPress Dashboard and go to Appearance » Themes and click the "Add New" button.
-2. Type in "Sinatra" in the search field and press the "Enter" key on your keyboard.
-3. Click the "Activate" button to activate Sinatra theme on your site.
-4. Navigate to Appearance » Customize to access theme options.
+1. Download the latest release from https://github.com/ciorici/sinatra/releases.
+2. Log into your WordPress Dashboard and go to Appearance » Themes and click the "Add New" button.
+3. Click "Upload Theme" and select the downloaded zip file.
+4. Click the "Activate" button to activate Sinatra theme on your site.
+5. Navigate to Appearance » Customize to access theme options.
 
 == Changelog ==
 
-= 1.3 =
+= 1.4.0 =
+* Security: Fixed stored XSS in breadcrumbs (CVE-2024-37116).
+* Security: Fixed reflected XSS in search forms.
+* Fixed: PHP 8.2+ deprecation warnings (dynamic properties).
+* Fixed: WordPress 6.9+ deprecation warnings (IE conditional comments).
+* Fixed: strip_tags() and version_compare() null parameter deprecations.
+* Fixed: Block editor button block appearing full-width.
+* Updated: WooCommerce template overrides to latest versions.
+* Updated: Replaced WooCommerce template overrides with hooks where possible.
+* Removed: IE-only assets (html5shiv, flexibility.js, sinatra-ie stylesheet).
+* Removed: Outdated vendor prefixes from CSS source files.
+* Added: Gulp build system for CSS/JS compilation and minification.
+* Improved: Dropped legacy browser support (IE11).
+* Improved: Modern autoprefixer configuration.
+
+= 1.3.0 =
 * Updated: WooCommerce templates.
 * Updated: WordPress 6.3 compatibility.
 * Updated: Google Fonts list.
@@ -137,12 +157,6 @@ Copyright (c) 2013-2017 Cole Bemis, MIT License, http://www.opensource.org/licen
 
 ImagesLoaded, https://imagesloaded.desandro.com/
 Copyright (c) 2019 David DeSandro, MIT License, http://www.opensource.org/licenses/mit-license.php
-
-HTML5 Shiv, https://github.com/aFarkas/html5shiv
-Copyright (c) 2014 Alexander Farkas, MIT/GPL2 License, https://github.com/aFarkas/html5shiv/blob/master/MIT%20and%20GPL2%20licenses.md
-
-Flexibility, https://github.com/jonathantneal/flexibility
-Copyright (c) 2015 Jonathan Neal 10up, MIT License, https://github.com/jonathantneal/flexibility/blob/master/LICENSE.md
 
 Breadcrumb Trail, https://github.com/justintadlock/breadcrumb-trail
 Copyright (c) 2008-2017 Justin Tadlock, GNU GPL v2 or later License, https://opensource.org/licenses/GPL-2.0
