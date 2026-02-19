@@ -54,7 +54,7 @@ if ( ! class_exists( 'Sinatra_DB_Updater' ) ) :
 		public function updates() {
 
 			$updates         = $this->get_db_update_callbacks();
-			$current_version = get_option( 'sinatra-theme-updater', null );
+			$current_version = get_option( 'sinatra-theme-updater', '0.0.0' );
 
 			if ( empty( $updates ) ) {
 				return;
