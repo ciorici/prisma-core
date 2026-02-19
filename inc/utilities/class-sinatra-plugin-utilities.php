@@ -239,7 +239,7 @@ class Sinatra_Plugin_Utilities {
 	 */
 	public function is_activated( $plugin ) {
 		// Prevent a suppressed error within `get_plugins()` when the plugin is not installed.
-		if ( ! file_exists( ABSPATH . '/' . WP_PLUGIN_DIR . '/' . $plugin ) ) {
+		if ( ! file_exists( WP_PLUGIN_DIR . '/' . $plugin ) ) {
 			return false;
 		}
 
