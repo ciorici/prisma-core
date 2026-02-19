@@ -11,21 +11,14 @@
 /* Admin page base styles
 /*****************************************/
 .sinatra-toggle {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
 }
 .sinatra-toggle *,
 .sinatra-toggle *:before,
 .sinatra-toggle *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 .sinatra-toggle input[type=checkbox] {
   display: none;
@@ -34,15 +27,12 @@
   background-color: #3857f1 !important;
 }
 .sinatra-toggle input[type=checkbox]:checked + label .sinatra-toggle-switch:after {
-  -webkit-transform: translateX(11px);
-      -ms-transform: translateX(11px);
-          transform: translateX(11px);
+  transform: translateX(11px);
 }
 .sinatra-toggle .sinatra-toggle-switch {
   background-color: #c7d5df;
   border-radius: 8px;
   padding: 2px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   outline: 0;
   display: block;
@@ -52,7 +42,6 @@
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   margin: 0 10px 0 0;
 }
@@ -65,20 +54,12 @@
   left: 0;
   border-radius: 50%;
   background: #ffffff;
-  -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  -webkit-transform: translateX(0px);
-      -ms-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
 }
 .sinatra-toggle label {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #23282d;
 }
 .sinatra-toggle label:hover .sinatra-toggle-switch {
@@ -94,15 +75,12 @@
   height: 16px;
 }
 .sinatra-toggle.large-toggle input[type=checkbox]:checked + label .sinatra-toggle-switch:after {
-  -webkit-transform: translateX(16px);
-      -ms-transform: translateX(16px);
-          transform: translateX(16px);
+  transform: translateX(16px);
 }
 
 #wpcontent {
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 1.8;
   color: #23282d;
@@ -113,13 +91,8 @@
   padding: 0 35px;
 }
 #wpbody-content h2 {
-  -js-display: inline-flex;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
@@ -135,8 +108,7 @@
 
 #wpcontent *,
 #wp-content *, #wp-content *:before, #wp-content *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 #wpbody {
@@ -176,8 +148,7 @@ div.updated {
   border-right: solid 1px #d6e1e8;
   border-bottom: solid 1px #d6e1e8;
   border-radius: 3px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   max-width: 940px;
   display: none;
 }
@@ -221,9 +192,7 @@ div.updated p a:hover {
 
 .sinatra-warning-icon svg {
   fill: #f0b849;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .sinatra-buttons {
@@ -238,22 +207,13 @@ body.wp-core-ui .si-btn {
   font-size: 13px;
   padding: 3px 12px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  -js-display: inline-flex;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   line-height: 1.8;
   height: auto;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   text-shadow: none;
 }
 .si-btn.large-button,
@@ -285,15 +245,12 @@ body.wp-core-ui .si-btn.secondary:focus {
 body.wp-core-ui .si-btn:hover,
 body.wp-core-ui .si-btn:focus {
   background-color: #506bf3;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   border-color: rgba(0, 0, 0, 0.15);
 }
 .si-btn:active,
 body.wp-core-ui .si-btn:active {
-  -webkit-transform: none;
-      -ms-transform: none;
-          transform: none;
+  transform: none;
 }
 .si-btn[disabled=disabled],
 body.wp-core-ui .si-btn[disabled=disabled] {
@@ -317,20 +274,13 @@ body.wp-core-ui .si-btn svg {
   color: #66717f;
   position: relative;
   padding: 7px 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: none;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .sinatra-dropdown-filter:hover, .sinatra-dropdown-filter:focus {
   color: #23282d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .sinatra-dropdown-filter.open > ul {
   display: block;
@@ -346,8 +296,7 @@ body.wp-core-ui .si-btn svg {
   border-radius: 4px;
   width: 180px;
   z-index: 99;
-  -webkit-box-shadow: 0 0 40px rgba(51, 59, 72, 0.2);
-          box-shadow: 0 0 40px rgba(51, 59, 72, 0.2);
+  box-shadow: 0 0 40px rgba(51, 59, 72, 0.2);
 }
 .sinatra-dropdown-filter > ul > li {
   display: block;
@@ -369,13 +318,8 @@ body.wp-core-ui .si-btn svg {
 }
 
 .sinatra-section-title {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .sinatra-modal {
@@ -387,43 +331,28 @@ body.wp-core-ui .si-btn svg {
   bottom: 0;
   background-color: rgba(44, 46, 58, 0.75);
   z-index: 99999;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   overflow-y: scroll;
   opacity: 0;
-  -webkit-transition: all 0.2s ease-out 0.2s;
   transition: all 0.2s ease-out 0.2s;
 }
 .sinatra-modal .sinatra-modal-container {
   opacity: 0;
-  -webkit-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 .sinatra-modal.sinatra-block {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .sinatra-modal.sinatra-visible {
   opacity: 1;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .sinatra-modal.sinatra-visible .sinatra-modal-container {
   opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transform: scale(1);
+  transition-delay: 0.2s;
 }
 
 /**
@@ -434,13 +363,8 @@ body.wp-core-ui .si-btn svg {
 /*****************************************/
 .sinatra-info-icon,
 .sinatra-warning-icon {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-left: 5px;
   position: relative;
 }
@@ -472,18 +396,14 @@ body.wp-core-ui .si-btn svg {
   border-radius: 3px;
   line-height: 1.6;
   bottom: 100%;
-  -webkit-transform: translate(0, -13px);
-      -ms-transform: translate(0, -13px);
-          transform: translate(0, -13px);
+  transform: translate(0, -13px);
 }
 .sinatra-tooltip:after {
   content: "";
   width: 10px;
   height: 10px;
   background-color: #23282d;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   position: absolute;
   top: calc(100% - 5px);
   left: var(--tooltip-left);
@@ -492,16 +412,12 @@ body.wp-core-ui .si-btn svg {
 .sinatra-tooltip.right-tooltip {
   left: 100%;
   top: 50%;
-  -webkit-transform: translate(13px, -50%);
-      -ms-transform: translate(13px, -50%);
-          transform: translate(13px, -50%);
+  transform: translate(13px, -50%);
 }
 .sinatra-tooltip.top-right-tooltip {
   right: 0;
   bottom: 100%;
-  -webkit-transform: translate(0, 13px);
-      -ms-transform: translate(0, 13px);
-          transform: translate(0, 13px);
+  transform: translate(0, 13px);
 }
 .sinatra-tooltip.top-right-tooltip:after {
   top: calc(100% - 6px);
@@ -513,9 +429,7 @@ body.wp-core-ui .si-btn svg {
   bottom: auto;
   left: 50%;
   width: auto;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   padding: 6px 10px;
   font-size: 11px;
   line-height: 1.5;
@@ -540,22 +454,11 @@ body.wp-core-ui .si-btn svg {
   margin-bottom: 9px;
 }
 #sinatra-header > .si-container {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 #sinatra-header .sinatra-logo img {
   height: 26px;
@@ -563,16 +466,12 @@ body.wp-core-ui .si-btn svg {
   display: block;
 }
 #sinatra-header .sinatra-logo:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   outline: thin dotted #7f8a99;
   outline-offset: 6px;
 }
 #sinatra-header .sinatra-header-action {
   margin-left: auto;
-  -js-display: inline-flex;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 13px;
 }
@@ -582,8 +481,7 @@ body.wp-core-ui .si-btn svg {
   font-weight: 500;
 }
 #sinatra-header .sinatra-header-action > a:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 #sinatra-header .sinatra-header-action > a:first-child {
   border-radius: 2px;
@@ -625,9 +523,6 @@ body.wp-core-ui .si-btn svg {
   border-radius: 3px;
 }
 .sinatra-tabs > ul {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   overflow: hidden;
@@ -636,9 +531,7 @@ body.wp-core-ui .si-btn svg {
 }
 .sinatra-tabs > ul > li {
   width: auto;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   border-bottom: 2px solid transparent;
   border-top: 2px solid transparent;
   text-align: center;
@@ -661,13 +554,8 @@ body.wp-core-ui .si-btn svg {
   font-weight: 500;
 }
 .sinatra-tabs > ul > li > a {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   width: auto;
   padding: 10px 0;
@@ -675,8 +563,7 @@ body.wp-core-ui .si-btn svg {
   font-weight: 400;
 }
 .sinatra-tabs > ul > li > a:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   outline: thin dotted #7f8a99;
 }
 
@@ -687,38 +574,20 @@ body.wp-core-ui .si-btn svg {
   margin: 19px 0 8px;
 }
 #wpbody-content h2.sinatra-section-title {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #wpbody-content .sinatra-section {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 15px 35px;
   margin-bottom: 50px !important;
 }
 #wpbody-content .sinatra-section.large-section {
   padding: 40px 35px;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 3px;
   border: 1px solid #d6e1e8;
   background-color: #ffffff;
@@ -740,17 +609,11 @@ body.wp-core-ui .si-btn svg {
   height: 140px;
 }
 #wpbody-content .sinatra-columns {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0;
   margin: -12px -12px 50px -12px;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
 }
 #wpbody-content .sinatra-columns .sinatra-column {
   width: 33.33%;
@@ -767,22 +630,12 @@ body.wp-core-ui .si-btn svg {
   overflow: scroll;
 }
 #wpbody-content .sinatra-columns.plugins .sinatra-box {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 #wpbody-content .sinatra-columns.plugins .sinatra-box > div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 #wpbody-content .sinatra-columns.plugins .plugin-image {
   position: absolute;
@@ -793,7 +646,6 @@ body.wp-core-ui .si-btn svg {
   z-index: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 #wpbody-content .sinatra-columns.plugins .plugin-image img {
@@ -809,25 +661,15 @@ body.wp-core-ui .si-btn svg {
   z-index: 2;
 }
 #wpbody-content .sinatra-columns.plugins .si-active-plugin {
-  -js-display: inline-flex;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-right: auto;
   font-weight: 400;
   color: #79ba49;
 }
 #wpbody-content .sinatra-columns.plugins .sinatra-buttons {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-top: 0;
   margin-top: 1.2em;
 }
@@ -836,16 +678,9 @@ body.wp-core-ui .si-btn svg {
   margin-right: 5px;
 }
 #wpbody-content .sinatra-box {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   border-radius: 3px;
   border: 1px solid #d6e1e8;
   background-color: #ffffff;
@@ -862,13 +697,8 @@ body.wp-core-ui .si-btn svg {
   margin-bottom: 0;
 }
 #wpbody-content .sinatra-box h4 {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 15px;
   font-weight: 600;
   margin: 0;
@@ -911,8 +741,7 @@ body.wp-core-ui .si-btn svg {
  * Import admin page footer styles.
  */
 #wpfooter {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 #sinatra-footer {
@@ -929,29 +758,17 @@ body.wp-core-ui .si-btn svg {
 #sinatra-footer ul {
   margin: 0 35px;
   padding: 0;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 #sinatra-footer ul li {
   margin: 0;
 }
 #sinatra-footer ul li a {
   text-decoration: none;
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 15px 10px;
   color: inherit;
 }
@@ -962,8 +779,7 @@ body.wp-core-ui .si-btn svg {
   text-decoration: underline;
 }
 #sinatra-footer ul li a:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   outline: thin dotted #7f8a99;
 }
 #sinatra-footer ul li a .dashicons {
@@ -978,8 +794,7 @@ body.wp-core-ui .si-btn svg {
 }
 
 p#footer-upgrade {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   float: none;
   text-align: center;
   font-size: 11px;
@@ -1029,10 +844,7 @@ p#footer-upgrade .dashicons {
     padding-top: 46px;
   }
   .sinatra-tabs > ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 0;
   }
   .sinatra-tabs > ul > li {
@@ -1045,13 +857,8 @@ p#footer-upgrade .dashicons {
     border-bottom: none !important;
   }
   #wpbody-content .sinatra-section-title {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
   }
   #wpbody-content .sinatra-section-title .sinatra-filters {

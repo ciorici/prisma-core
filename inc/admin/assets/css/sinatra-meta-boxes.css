@@ -6,8 +6,7 @@
 }
 #side-sortables .sinatra-meta-box-field select {
   min-width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 #side-sortables .sinatra-meta-box-field:last-child {
   margin-bottom: 0;
@@ -26,7 +25,6 @@
   height: 24px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
 }
@@ -65,11 +63,6 @@ body:not(.block-editor-page) #side-sortables .sinatra-meta-box-field .sinatra-ch
   min-height: 26px;
 }
 body:not(.block-editor-page) #side-sortables .sinatra-meta-box-field .sinatra-checkbox-row .components-base-control__field {
-  -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }

@@ -92,8 +92,7 @@
 @media screen and (max-width: 960px) {
   .sinatra-layout__boxed-separated.sinatra-sidebar-style-3 .elementor-widget-sidebar .si-widget {
     background: none !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     border: none;
     margin-bottom: 40px;
   }
