@@ -94,6 +94,12 @@ if ( ! class_exists( 'Prisma_Core_Dashboard' ) ) :
 			// Hide from admin navigation.
 			remove_submenu_page( 'themes.php', 'prisma-core-plugins' );
 
+			// Set page title before admin-header.php runs strip_tags() on it (PHP 8.x compat).
+			add_action( 'load-appearance_page_prisma-core-plugins', function() {
+				global $title;
+				$title = __( 'Plugins', 'prisma-core' );
+			} );
+
 			/**
 			 * Changelog page.
 			 */
@@ -107,6 +113,12 @@ if ( ! class_exists( 'Prisma_Core_Dashboard' ) ) :
 
 			// Hide from admin navigation.
 			remove_submenu_page( 'themes.php', 'prisma-core-changelog' );
+
+			// Set page title before admin-header.php runs strip_tags() on it (PHP 8.x compat).
+			add_action( 'load-appearance_page_prisma-core-changelog', function() {
+				global $title;
+				$title = __( 'Changelog', 'prisma-core' );
+			} );
 		}
 
 		/**
