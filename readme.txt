@@ -6,7 +6,7 @@ Tested up to: 6.9
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 1.4.0
+Stable tag: 1.0.0
 
 A lightweight and highly customizable multi-purpose theme that makes it easy for anyone to create their perfect website.
 
@@ -29,7 +29,7 @@ Source code: https://github.com/ciorici/prisma-core
 
 == Changelog ==
 
-= 1.4.0 =
+= 1.0.0 =
 * Security: Fixed stored XSS in breadcrumbs (CVE-2024-37116).
 * Security: Fixed reflected XSS in search forms.
 * Fixed: PHP 8.2+ deprecation warnings (dynamic properties).
@@ -44,112 +44,6 @@ Source code: https://github.com/ciorici/prisma-core
 * Improved: Dropped legacy browser support (IE11).
 * Improved: Modern autoprefixer configuration.
 
-= 1.3.0 =
-* Updated: WooCommerce templates.
-* Updated: WordPress 6.3 compatibility.
-* Updated: Google Fonts list.
-
-= 1.2.1 =
-* Fixed: Square icon displaying on mobile navigation.
-* Fixed: Table alignment not working.
-* Fixed: Pre-Footer not displaying on homepage.
-* Fixed: Post format "Link" incorrect links.
-* Updated: Google Fonts list.
-* Improved: CSS enhancements.
-
-= 1.2.0 =
-* Added: Responsive visibility for Sticky header.
-* Fixed: Sticky sidebar option in combination with sticky header.
-* Fixed: WooCommerce archive title in breadcrumbs.
-* Fixed: SVG Icons not working in Customizer widgets.
-* Updated: Google Fonts list.
-* Improved: Replaced font icons with SVGs.
-* Improved: Performance.
-* Improved: CSS enhancements.
-* Improved: Accessibility.
-
-= 1.1.6 =
-* Fixed: Headings on Block Editor display incorrectly.
-* Fixed: Background and Content Background color incorrect for Boxed and Boxed Content layout.
-* Fixed: Displaying "Blog" in breadcrumbs on single pages.
-* Fixed: Breadcrumbs background displaying featured image on product pages.
-* Fixed: Header Cart widget - Variable product displaying wrong price and name.
-* Improved: TablePress compatibility.
-
-= 1.1.5 =
-* Updated: WooCommerce templates.
-* Fixed: Mobile menu visibility.
-* Fixed: SSL support for uploads folder.
-* Improved: Code formatting.
-
-= 1.1.4 =
-* Updated: WordPress 5.5 compatibility.
-* Fixed: Range control in Customizer not working.
-* Fixed: Page Header background color overlay not working.
-* Improved: Block Editor styles to match frontend design.
-
-= 1.1.3 =
-* Added: 'prisma_core_entry_meta_post_type' filter that allows post meta tags to be displayed on custom post types.
-* Added: Sticky header option.
-* Added: New Main Footer column layout: 1/3 + 2/3.
-* Added: New Main Footer column layout: 2/3 + 1/3.
-* Improved: CSS enhancements.
-
-= 1.1.2 =
-* Added: Option to control sidebar position on smaller screens.
-* Fixed: CSS issue with mobile (hamburger) menu colors.
-* Fixed: CSS issue with copyright menu not displaying on mobile devices.
-* Fixed: Breadcrumbs Posts page title hard coded to 'Blog' on single pages.
-* Updated: Default values for transparent header.
-* Updated: Google Fonts list.
-* Improved: Block Editor styles to match frontend design.
-* Improved: CSS enhancements.
-
-= 1.1.1 =
-* Added: Transparent Header - option to set alternative logo.
-* Added: Transparent Header - options for logo size and spacing.
-* Added: Transparent Header - color options.
-* Added: Option to enable or disable Transparent Header on individual posts/pages.
-* Fixed: Block Compatibility: Button Block Color Specificity.
-* Fixed: Various alignwide and alignfull issues with Block libraries.
-* Fixed: Alignfull blocks cover up the post meta.
-* Updated: Google Fonts list.
-* Improved: Block Editor styles to match frontend design.
-* Improved: CSS enhancements.
-
-= 1.1.0 =
-* Added: Blog - Horizontal Layout and options to customize the layout.
-* Added: Option to choose image size for Blog / Archive layout.
-* Added: Breadcrumbs section in Customizer.
-* Added: Display options for Breadcrumbs.
-* Added: Display options for Hero.
-* Added: Display options for Pre Footer Callout.
-* Added: Option for Page Header alignment.
-* Added: Option for Page Header spacing.
-* Added: Option for Page Title layout for Single Post pages.
-* Added: Option to display "Shares" in Post Meta Elements when Social Snap is enabled.
-* Added: Option to show avatar and icons in post meta in Blog » Blog Page/Archive » Show.
-* Added: Option to show last updated date in Blog » Single Post » Post Elements.
-* Added: Reset to default values in customizer controls.
-* Added: Action before and after hooks for Top Bar, Header and Copyright widgets.
-* Added: Theme support for responsive embeds.
-* Added: Database Upgrader class.
-* Added: Flexibility.js to improve flexbox browser support.
-* Fixed: Gallery Block align center not working.
-* Fixed: Breadcrumbs and Google Search Console issue.
-* Fixed: Hero » Device Visibility not working.
-* Fixed: Main Header » Background Image Overlay Color not working.
-* Fixed: Main Navigation disappears when screen is resized.
-* Fixed: Main Navigation » Typography » Font Size issue.
-* Fixed: Footer » Pre Footer » Call to Action » Typography not working.
-* Fixed: Mobile menu dissappears when scrolling.
-* Fixed: Links in Prisma Core widgets always open in same tab.
-* Updated: Appearance » Prisma Core Theme page.
-* Updated: Google Fonts list.
-* Improved: Browser compatibility.
-* Improved: Responsive styling.
-* Improved: CSS enhancements.
-* Improved: WPML plugin compatibility.
 
 == Resources ==
 Feather Icons, https://feathericons.com/

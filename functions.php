@@ -28,7 +28,7 @@ final class Prisma_Core {
 	 * @since 1.0.0
 	 * @var string
 	 */
-	public $version = '1.4.0';
+	public $version = '1.0.0';
 
 	/**
 	 * Theme options.
