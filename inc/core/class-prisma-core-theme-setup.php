@@ -169,6 +169,17 @@ if ( ! class_exists( 'Prisma_Core_Theme_Setup' ) ) :
 
 			add_editor_style( 'assets/css/editor-style' . $prisma_core_suffix . '.css' );
 
+			// Remove default WordPress block patterns.
+			remove_theme_support( 'core-block-patterns' );
+
+			// Register block pattern category.
+			register_block_pattern_category(
+				'prisma-core',
+				array(
+					'label' => __( 'Prisma Core', 'prisma-core' ),
+				)
+			);
+
 			do_action( 'prisma_core_after_setup_theme' );
 		}
 

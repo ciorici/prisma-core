@@ -283,19 +283,20 @@ if ( ! class_exists( 'Prisma_Core_Fonts' ) ) :
 		}
 
 		/**
-		 * Enqueue Google fonts.
+		 * Get the Google Fonts URL.
 		 *
-		 * @since 1.0.0
+		 * @since 1.3.2
+		 * @return string|false Google Fonts URL or false if no fonts to load.
 		 */
-		public function enqueue_google_fonts() {
+		public function get_google_fonts_url() {
 
 			$fonts = get_transient( 'prisma_core_google_fonts_enqueue' );
 
 			if ( false === $fonts || empty( $fonts ) ) {
-				return;
+				return false;
 			}
 
-			$url     = '//fonts.googleapis.com/css';
+			$url     = 'https://fonts.googleapis.com/css';
 			$family  = array();
 			$subsets = array();
 
@@ -313,7 +314,7 @@ if ( ! class_exists( 'Prisma_Core_Fonts' ) ) :
 			$family  = implode( '|', $family );
 			$subsets = implode( ',', $subsets );
 
-			$url = add_query_arg(
+			return add_query_arg(
 				array(
 					'family'  => $family,
 					'display' => 'swap',
@@ -321,8 +322,21 @@ if ( ! class_exists( 'Prisma_Core_Fonts' ) ) :
 				),
 				$url
 			);
+		}
 
-			// Enqueue.
+		/**
+		 * Enqueue Google fonts.
+		 *
+		 * @since 1.0.0
+		 */
+		public function enqueue_google_fonts() {
+
+			$url = $this->get_google_fonts_url();
+
+			if ( ! $url ) {
+				return;
+			}
+
 			wp_enqueue_style(
 				'prisma-core-google-fonts',
 				$url,
@@ -476,3 +490,24 @@ if ( ! class_exists( 'Prisma_Core_Fonts' ) ) :
 	}
 
 endif;
+
+/**
+ * Add preconnect for Google Fonts.
+ *
+ * @since 1.3.2
+ * @param array  $urls          URLs to print for resource hints.
+ * @param string $relation_type The relation type the URLs are printed.
+ * @return array URLs to print for resource hints.
+ */
+function prisma_core_resource_hints( $urls, $relation_type ) {
+
+	if ( wp_style_is( 'prisma-core-google-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+		$urls[] = array(
+			'href' => 'https://fonts.gstatic.com',
+			'crossorigin',
+		);
+	}
+
+	return $urls;
+}
+add_filter( 'wp_resource_hints', 'prisma_core_resource_hints', 10, 2 );

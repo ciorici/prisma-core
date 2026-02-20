@@ -136,6 +136,12 @@ function prisma_core_block_editor_assets() {
 	// Enqueue google fonts.
 	prisma_core()->fonts->enqueue_google_fonts();
 
+	// Also pass Google Fonts URL to add_editor_style() for reliable editor loading.
+	$google_fonts_url = prisma_core()->fonts->get_google_fonts_url();
+	if ( $google_fonts_url ) {
+		add_editor_style( $google_fonts_url );
+	}
+
 	// Add dynamic CSS as inline style.
 	wp_add_inline_style(
 		'prisma-core-block-editor-styles',
